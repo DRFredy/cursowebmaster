@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  top: 0;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  background-color: lightyellow;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  color: gray;
+  text-align: center;
+  text-shadow: black 3px 2px;
+}
+
+label {
+  min-width: 15%;
+}
+
+.full-width {
+  width: 100%;
+  padding: 0.5rem;  
+}
+
+.half-width {
+  width: 50%;
+  padding: 0.5rem;  
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.available {
+  min-width: -moz-available;
+}
+
+.height-5 {
+  height: 15rem;
+}
+
+.shadow-10 {
+  box-shadow: 6px 5px 15px -11px gray
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {  
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  background-image: url("./img/DRF.jpg");
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 10px 12px 12px -8px gray;
+}
+
+.content {  
+  font-size: medium;
+  margin: 2rem 0 1rem 0;
+}
+
+.sub-title {  
+  font-size: large;
+  margin: 2rem 0 1rem 0;
+}
+
+.sub-sub-title {  
+  font-size: medium;
+  margin: 2rem 0 1rem 0;
+}
+
+.bold {
+  font-weight: bold;;
+}
