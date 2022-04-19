@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono&display=swap');
+
+body {
+  margin: 0;
+  top: 0;
+  padding: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  background: #f5f9fc;
+  background: linear-gradient(0deg,#cce8f5 0%, rgba(134, 161, 199, 0.44) 70%);
+  background: -webkit-linear-gradient(0deg,#cce8f5 0%, rgba(134, 161, 199, 0.44) 70%);
+  background: -moz-linear-gradient(0deg,#cce8f5 0%, rgba(134, 161, 199, 0.44) 70%);  
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  color: gray;
+  text-align: center;
+  text-shadow: rgb(43, 43, 43) 2px 3px 3px;
+}
+
+label {
+  min-width: 15%;
+}
+
+i {
+  margin: 0 1rem 0 1rem;
+}
+
+.full-width {
+  width: 100%;
+  padding: 0.5rem;  
+}
+
+.half-width {
+  width: 50%;
+  padding: 0.5rem;  
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.display-inline {
+  display: inline-block;
+}
+
+.available {
+  min-width: -moz-available;
+}
+
+.height-5 {
+  height: 15rem;
+}
+
+.shadow-10 {
+  box-shadow: 6px 5px 15px -11px gray
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info {  
+  height: 10rem;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.left {
+  justify-content: left;
+}
+
+.right {
+  justify-content: right;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  background-image: url("./img/DRF.jpg");
+  background-size: 10rem;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  /* box-shadow: 10px 12px 12px -8px gray; */
+  box-shadow: 0 4px 6px black;
+}
+
+.content {  
+  font-size: medium;
+  margin: 2rem 0 1rem 0;
+}
+
+.sub-title {  
+  font-size: large;
+  margin: 2rem 0 1rem 0;
+}
+
+.sub-sub-title {  
+  font-size: medium;
+  margin: 2rem 0 1rem 0;
+}
+
+.bold {
+  font-weight: bold;;
+}
+
+.profile-data-box {
+  width: 98%;
+  margin: 4rem 0 0 0;
+  background: #bad8e5;
+  background: linear-gradient(0deg,rgba(115, 139, 173, 0.44) 70%), #c3e5f5 0%;
+  background: -webkit-linear-gradient(0deg,rgba(115, 139, 173, 0.44) 70%), #c3e5f5 0%;
+  background: -moz-linear-gradient(0deg,rgba(115, 139, 173, 0.44) 70%), #c3e5f5 0%;
+  box-shadow: 3px 3px 5px 2px gray;
+}
