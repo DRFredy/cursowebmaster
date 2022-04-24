@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.contenedor {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.elemento {
+  margin: 0;
+  width: 33%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.verde {
+  background-color: green;
+}
