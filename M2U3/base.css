@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	color: #000;
+	background: #332F29;
+	font-size:100%;
+}
+
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right:auto;
+	margin-left:auto;
+	overflow: hidden;
+}
+
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {
+	color:#F1F2C0;
+	text-decoration: none;
+}
+
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+}
+
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}
+
+@media only screen and (max-width: 799px){
+	body {
+		margin: 0;
+		padding: 0;
+		font-family:'Times New Roman', Times, serif;
+		color: #000;
+		background: #332F29;
+		font-size:90%;
+	}
+
+	h1 {
+		margin: 0 0 20px 0;
+	}
+
+	#contenedor {
+		max-width: 799px;
+		background: #8FA68E;
+		margin-right:auto;
+		margin-left:auto;
+		overflow: hidden;
+	}
+
+	nav {
+		background: #f5bc68;
+		width: 100%;
+	}
+
+	ul {
+		list-style-type:none;
+	}
+
+	li {
+		margin-bottom: 15px;
+	}
+
+	a {
+		color: black;
+		text-decoration: none;		
+	}
+
+	section {
+		background: #e9e5b2;
+		margin: 0;
+		width: 100%;
+		padding-left: 1%;
+	}
+
+	aside {
+		background: #CCC59E;
+		width: 99%;
+		padding-left: 1%;
+		float: right;
+	}
+}
