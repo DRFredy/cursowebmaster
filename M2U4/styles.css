@@ -1,0 +1,32 @@
+.number {
+  text-align: right;
+}
+
+.coltitle {
+  text-align: center;
+  font-family: monospace;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+table {
+  box-shadow: 1px 1px 5px 1px lightgray;
+}
+
+.card-body {
+  background-color: rgb(204, 203, 203);
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-subtitle {
+  text-align: center;
+}
+
+.card-text {
+  font-size: .8rem;
+}
