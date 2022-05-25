@@ -7,8 +7,12 @@ body {
 header {
   background-image: url('../img/lights.png');
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover;
   padding: 16px 0;
+  position: sticky;
+  top: 0;
+  height: 120px;
+  margin-bottom: 12px;
 }
 
 header h1 {
@@ -18,13 +22,12 @@ header h1 {
   font-style: italic;
   display: inline-block;
   position: relative;
-  bottom: 35px;
+  bottom: 5%;
   margin-left: 10px;
 }
 
 nav {
   background-color: #122f4f;
-  margin-bottom: 20px; 
 }
 
 nav ul {
@@ -38,7 +41,7 @@ nav ul li {
   flex-grow: 1;
 }
 
-nav ul li a {
+nav ul li span {
   color: white;
   text-decoration: none;
   padding: 3px 6px;
@@ -46,8 +49,13 @@ nav ul li a {
   text-align: center;
 }
 
-nav ul li a:hover {
+nav ul li span:hover {
   background-color: rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+nav ul li span.active {
+  background-color: #4c76a5;
 }
 
 footer {
@@ -57,12 +65,9 @@ footer {
   text-align: center;
   padding: 5px 0;
   margin-top: 20px;
+  position: sticky;
+  bottom: 0;
 }
-
-nav ul li a.activo {
-  background-color: #4c76a5;
-}
-
 
 h2 {
   color: #2e64a1;
@@ -70,22 +75,106 @@ h2 {
 }
 
 
+
 .holder {
   max-width: 960px;
   margin: 0 auto;
+  text-align: center;
+  height: inherit;
+
 }
 
-.bienvenidos {
-  /* width: 100%; */
+.main-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.welcome {
   padding-right: 10px;
   box-sizing: border-box;
 }
 
-/* .columnas {
-  display: flex;
-  justify-content: space-between;
-} */
+.welcome p {
+  font-size: 14px;
+  margin: 5px;
+}
 
-.bienvenidos p {
-  font-size: 20px;
+.centered {
+  margin: 0 auto;
+  display: block;
+}
+
+.mainContent {
+  width: 95%;
+  height: 80vh;
+}
+
+.album {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.album-img {
+  width: 25%;
+  margin: 0 25px ;
+  height: fit-content;
+}
+
+.album-data {
+  width: 75%;
+}
+
+.album-name {
+  font-weight: bold;
+}
+
+.trasklist {
+  font-size: 12px;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 570px) {
+  header {
+    height: 142px;
+  }
+  
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+    height: 142px;
+  }
+  
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header {
+    height: 142px;
+  }
+  
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav {
+    margin-top: 0;
+  }
 }
