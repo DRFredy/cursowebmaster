@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea Unidad 3: Javascript (parte 1) - Ejercicio 2</title>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+  <h1>Ejericio 2</h1>
+  <h2>Crear el código que reciba como parámetro un array de números y devuelva el mayor.</h2>  
+  <script type="text/javascript">
+    var arr = [];
+  </script>
+  <label for="txtNum">Numero a agregar:</label>
+  <input type="text" id="txtNum" value="0">
+  <input type="button" value="Agregar" onclick="agregarNumAArrayElem('txtNum', 'txtArray', arr)"/>
+  <br />
+  <br />
+  <input type="button" value="Limpiar" onclick="javascript:document.getElementById('txtArray').value='[]';arr=[];"/>
+  <br />
+  <label for="txtArray">Valores en array:</label>
+  <input type="text" id="txtArray" value="[]" disabled style="border: none;">
+  <br />
+  <br />
+  <br />
+  <input type="button" value="Calcular" onclick="setearTextoEnArrayElem('resultado', arr)"/>
+  <br />
+  <label for="resultado">Resultado:</label>
+  <input type="text" id="resultado" style="border: none;"/>
+
+</body>
+</html>

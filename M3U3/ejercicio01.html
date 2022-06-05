@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarea Unidad 3: Javascript (parte 1) - Ejercicio 1</title>  
+</head>
+<body>
+  <h1>Ejericio 1</h1>
+  <h2>Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo 
+    a las siguientes reglas:</h2>
+  <p>0 a 1000 metros = pie
+    <br />
+    1000 a 10000 metros = bicicleta
+    <br />
+    10000 a 30000 metros = colectivo
+    <br />
+    30000 a 100000 metros = auto
+    <br />
+    +100000 = avion
+  </p>
+  <hr>
+  
+  <label for="distancia">Distancia:</label>
+  <input type="text" id="distancia" onchange="document.getElementById('resultado').value = calcularMedioTransporte(event);" value="0">
+  (&ltenter&gt para activar el evento onchange..)
+  <br />
+  <br />
+  <label for="resultado">Transporte a utilizar:</label>
+  <input type="text" id="resultado" value="" disabled style="border: none;">
+  
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
