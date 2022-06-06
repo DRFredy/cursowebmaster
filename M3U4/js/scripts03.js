@@ -49,24 +49,18 @@ function mostrarAprobados(contenedorId) {
 
 function mostrarListaEn(divEl, arreglo, conColor, conNota) {
   var listaItems = '';
+  var aprobs = alumnos.filter(alumno => alumno.nota >= 7);
   
   arreglo.forEach(function(al){
-    listaItems += '<li';
-    if(conColor) {
-      var aprobs = alumnos.filter(alumno => alumno.nota >= 7);
-      var cls = aprobs.find(aa => aa.nombre == al.nombre) ? 'aprobado' : 'desaprobado';
-      listaItems += ' class="' + cls + '"';
-    }
-
-    listaItems += '>' + al.nombre;
-
-    if(conNota) {
-      listaItems += ' (' + al.nota + ')';
-    }
-    listaItems += '</li>';
+    var cls = aprobs.find(aa => aa.nombre == al.nombre) ? 'aprobado' : 'desaprobado';
+    listaItems += `<li 
+      ${conColor ? ` class="${cls}"` : ''}>
+      ${al.nombre}
+      ${conNota ? ` (${al.nota})` : ''}
+      </li>`;
   });
 
-  var lista = '<ul>{itemsLista}</ul>'.replace('{itemsLista}', listaItems);
+  var lista = `<ul>${listaItems}</ul>`;
 
   divEl.innerHTML = lista;  
 }
