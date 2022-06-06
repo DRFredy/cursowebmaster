@@ -1,0 +1,22 @@
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.rojo {
+  background-color: red;
+}
+
+.amarillo {
+  background-color: yellow;
+}
+
+.verde {
+  background-color: green;
+}

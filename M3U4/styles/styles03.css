@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-flow:row;
+  justify-content: space-between;
+  width: 30%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.column {
+  width: 50%;
+}
+
+.aprobado {
+  background-color: rgb(141, 254, 141);
+}
+
+.desaprobado {
+  background-color: rgb(255, 150, 150);
+}
