@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/Normalize.css'
+import '../App.css'
+import '../styles/components/pages/DiscographyPage.css';
 
 const DiscographyPage = (props) => {
   return (

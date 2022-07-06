@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/Normalize.css'
+import '../App.css'
+import '../styles/components/pages/NewsPage.css';
 
 const NewsPage = (props) => {
   return (

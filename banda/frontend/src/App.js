@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import './styles/Normalize.css'
+
 import Header from './components/layout/Header';
 import Nav from './components/layout/Nav';
 import Footer from './components/layout/Footer';
@@ -25,8 +27,6 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/contact" element={< ContactPage/>} />
-
-
         </Routes>
       </BrowserRouter>
 

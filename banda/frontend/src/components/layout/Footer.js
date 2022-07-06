@@ -1,4 +1,7 @@
 import React from 'react';
+import '../../styles/Normalize.css'
+import '../../App.css'
+import '../../styles/components/layout/Footer.css';
 
 const Footer = (props) => {
   return (

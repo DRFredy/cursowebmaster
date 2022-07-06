@@ -1,0 +1,26 @@
+.album {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.album-img {
+  width: 25%;
+  margin: 0 25px ;
+  height: fit-content;
+  box-shadow: 3px 5px 8px -1px gray;
+  border-left: 20px solid #393939;
+  box-sizing: border-box;
+  border-radius: 1%;
+}
+
+.album-data {
+  width: 75%;
+}
+
+.album-name {
+  font-weight: bold;
+}
+
+.trasklist {
+  font-size: 12px;
+}
