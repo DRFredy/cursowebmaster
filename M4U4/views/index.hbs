@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+
+{{#if existent}}
+  <p>Hola {{name}}, escribiste {{someText}}
+    <br />
+    <a href="/exit">Salir</a>
+  </p>
+{{/if}}
+
+{{#unless existent}}
+  <p>Ingrese un nombre y escriba algo. Luego intente ingresar un nombre ya ingresado (puede ingresar más de un registro)</p>
+  <form action="/insert" method="post">
+    <div class="field">
+      <label for="name">Nombre:</label>
+      <input type="text" name="name">
+    </div>
+    <br />
+    <div class="field">
+      <label for="someText">Texto:</label>
+      <input type="text" name="someText">
+    </div>
+    <br />
+    <button>Ingresar</button>
+  </form>
+{{/unless}}
